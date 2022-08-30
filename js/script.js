@@ -12,7 +12,6 @@ timer,
 maxTime = 60,
 timeLeft = maxTime,
 isTyping = false;
-// timeTag.innerText =100;
 
 function randomParagraph(){
     let randomIndex = Math.floor(Math.random() * paragraphs.length);
@@ -69,7 +68,7 @@ function inittyping() {
         clearInterval(timer);
     }
 }
-
+// timer
 function initTimer(){
     if(timeLeft>0){
         timeLeft--;
@@ -80,7 +79,7 @@ function initTimer(){
     }
 }
 
-function resetGame(){
+function resetGame(){ 
     randomParagraph();
     inputField.value="";
     clearInterval(timer);
